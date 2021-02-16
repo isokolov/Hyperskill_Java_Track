@@ -1,0 +1,103 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    // do not remove imports
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.Scanner;
+    import java.util.function.Function;
+
+    class ArrayUtils {
+        // define hasNull method here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11024#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    Main.java:44: error: cannot find symbol
+        public static <T> List<T> getList(Scanner scanner, Function<Scanner, T> func) {
+                                          ^
+      symbol:   class Scanner
+      location: class Main
+    Main.java:44: error: cannot find symbol
+        public static <T> List<T> getList(Scanner scanner, Function<Scanner, T> func) {
+                                                           ^
+      symbol:   class Function
+      location: class Main
+    Main.java:44: error: cannot find symbol
+        public static <T> List<T> getList(Scanner scanner, Function<Scanner, T> func) {
+                                                                    ^
+      symbol:   class Scanner
+      location: class Main
+    Main.java:44: error: cannot find symbol
+        public static <T> List<T> getList(Scanner scanner, Function<Scanner, T> func) {
+                          ^
+      symbol:   class List
+      location: class Main
+    Main.java:14: error: cannot find symbol
+            Scanner scanner = new Scanner(System.in);
+            ^
+      symbol:   class Scanner
+      location: class Main
+    Main.java:14: error: cannot find symbol
+            Scanner scanner = new Scanner(System.in);
+                                  ^
+      symbol:   class Scanner
+      location: class Main
+    Main.java:18: error: cannot find symbol
+                    List<Integer> list = getList(scanner, Scanner::nextInt);
+                    ^
+      symbol:   class List
+      location: class Main
+    Main.java:18: error: cannot find symbol
+                    List<Integer> list = getList(scanner, Scanner::nextInt);
+                                                          ^
+      symbol:   variable Scanner
+      location: class Main
+    Main.java:24: error: cannot find symbol
+                    List<String> list = getList(scanner, Scanner::next);
+                    ^
+      symbol:   class List
+      location: class Main
+    Main.java:24: error: cannot find symbol
+                    List<String> list = getList(scanner, Scanner::next);
+                                                         ^
+      symbol:   variable Scanner
+      location: class Main
+    Main.java:30: error: cannot find symbol
+                    List<Long> list = getList(scanner, Scanner::nextLong);
+                    ^
+      symbol:   class List
+      location: class Main
+    Main.java:30: error: cannot find symbol
+                    List<Long> list = getList(scanner, Scanner::nextLong);
+                                                       ^
+      symbol:   variable Scanner
+      location: class Main
+    Main.java:36: error: cannot find symbol
+                    List<Short> list = getList(scanner, Scanner::nextShort);
+                    ^
+      symbol:   class List
+      location: class Main
+    Main.java:36: error: cannot find symbol
+                    List<Short> list = getList(scanner, Scanner::nextShort);
+                                                        ^
+      symbol:   variable Scanner
+      location: class Main
+    Main.java:45: error: cannot find symbol
+            List<T> list = new ArrayList<>();
+            ^
+      symbol:   class List
+      location: class Main
+    Main.java:45: error: cannot find symbol
+            List<T> list = new ArrayList<>();
+                               ^
+      symbol:   class ArrayList
+      location: class Main
+    16 errors
+  time: Tue, 16 Feb 2021 14:19:46 UTC
+record: -1

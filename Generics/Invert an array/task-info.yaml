@@ -1,0 +1,55 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    // do not remove imports
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.Scanner;
+    import java.util.function.Function;
+
+    class ArrayUtils {
+        // define invert method here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11025#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    Main.java:57: error: cannot find symbol
+        public static <T> List<T> getList(Scanner scanner, Function<Scanner, T> func) {
+                                                           ^
+      symbol:   class Function
+      location: class Main
+    Main.java:33: error: method invert in class ArrayUtils cannot be applied to given types;
+                    array = ArrayUtils.invert(array);
+                                      ^
+      required: Integer[]
+      found: String[]
+      reason: cannot infer type-variable(s) T
+        (varargs mismatch; String[] cannot be converted to Integer)
+      where T is a type-variable:
+        T extends Object declared in method <T>invert(Integer...)
+    Main.java:41: error: method invert in class ArrayUtils cannot be applied to given types;
+                    array = ArrayUtils.invert(array);
+                                      ^
+      required: Integer[]
+      found: Long[]
+      reason: cannot infer type-variable(s) T
+        (varargs mismatch; Long[] cannot be converted to Integer)
+      where T is a type-variable:
+        T extends Object declared in method <T>invert(Integer...)
+    Main.java:49: error: method invert in class ArrayUtils cannot be applied to given types;
+                    array = ArrayUtils.invert(array);
+                                      ^
+      required: Integer[]
+      found: Short[]
+      reason: cannot infer type-variable(s) T
+        (varargs mismatch; Short[] cannot be converted to Integer)
+      where T is a type-variable:
+        T extends Object declared in method <T>invert(Integer...)
+    4 errors
+  time: Tue, 16 Feb 2021 14:08:57 UTC
+record: -1

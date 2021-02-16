@@ -1,0 +1,59 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    // do not remove imports
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.Scanner;
+    import java.util.function.Function;
+
+    class ArrayUtils {
+        // define getFirst method here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11022#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    Main.java:21: error: method getFirst in class ArrayUtils cannot be applied to given types;
+                    System.out.println(ArrayUtils.getFirst(array));
+                                                 ^
+      required: int[]
+      found: Integer[]
+      reason: cannot infer type-variable(s) T
+        (varargs mismatch; Integer[] cannot be converted to int)
+      where T is a type-variable:
+        T extends Object declared in method <T>getFirst(int...)
+    Main.java:27: error: method getFirst in class ArrayUtils cannot be applied to given types;
+                    System.out.println(ArrayUtils.getFirst(array));
+                                                 ^
+      required: int[]
+      found: String[]
+      reason: cannot infer type-variable(s) T
+        (varargs mismatch; String[] cannot be converted to int)
+      where T is a type-variable:
+        T extends Object declared in method <T>getFirst(int...)
+    Main.java:33: error: method getFirst in class ArrayUtils cannot be applied to given types;
+                    System.out.println(ArrayUtils.getFirst(array));
+                                                 ^
+      required: int[]
+      found: Long[]
+      reason: cannot infer type-variable(s) T
+        (varargs mismatch; Long[] cannot be converted to int)
+      where T is a type-variable:
+        T extends Object declared in method <T>getFirst(int...)
+    Main.java:39: error: method getFirst in class ArrayUtils cannot be applied to given types;
+                    System.out.println(ArrayUtils.getFirst(array));
+                                                 ^
+      required: int[]
+      found: Short[]
+      reason: cannot infer type-variable(s) T
+        (varargs mismatch; Short[] cannot be converted to int)
+      where T is a type-variable:
+        T extends Object declared in method <T>getFirst(int...)
+    4 errors
+  time: Tue, 16 Feb 2021 13:38:04 UTC
+record: -1
